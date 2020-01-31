@@ -1,0 +1,578 @@
+/*MY STYLES*/
+
+/*FONT STYLES*/
+@font-face {
+    font-family: 'BebasNeue';
+    src: url(../font/BebasNeue-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'AlexBrush';
+    src: url(../font/AlexBrush-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'QuickSand';
+    src: url(../font/Quicksand-Bold.otf);
+}
+/**/
+
+body {
+    background-image: url(../img/space.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*HEADER STYLE*/
+.identity{
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    margin-top: 30px;
+    box-shadow: 0px 0px 20px rgba(63, 211, 248, 0.75);
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+/* overlay */
+
+.overlay{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0);
+    z-index: 9999;
+    transition: .8s;
+    text-align: center;
+    padding: 100px;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.8);
+}
+
+.overlay img {
+    max-height: 100%;
+    box-shadow: 2px 2px 7px rgba(0,0,0,.7);
+
+}
+
+.overlay:target img {
+    animation: zoomDanFade 1s;
+}
+
+
+.overlay .close {
+    position: absolute;
+    top: 50px;
+    left: 67%;
+    margin-left: -20px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border: 1px solid white;
+    line-height: 14px;
+    padding: 5px;
+    opacity: 0;
+}
+
+.overlay:target .close {
+    animation: slideDownFade .5s .5s forwards;
+}
+
+ #foto-rzq {
+  width: 200px;
+}
+
+.name {
+    width: auto;
+    height: 30px;
+    margin: 10px auto;
+    margin-top:30px;
+    margin-bottom: 57px;
+    display: block;
+    text-align: center;
+    font: 18px 'BebasNeue', 'Arial Narrow', arial, sans-serif;
+}
+
+.name a{
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    border-bottom: 1px solid white;
+    line-height: 1px;
+}
+
+.teksShadow {
+    font-weight: normal;
+    text-shadow: 0 0 10px #fff, 
+                    0 0 20px #fff, 
+                    0 0 30px #fff, 
+                    0 0 40px lightblue, 
+                    0 0 70px lightblue, 
+                    0 0 80px lightblue, 
+                    0 0 100px lightblue, 
+                    0 0 150px lightblue;
+}
+
+.name a:hover{
+    text-shadow: 0 0 10px #fff, 
+					 0 0 20px #fff, 
+					 0 0 30px #fff, 
+					 0 0 40px rgba(63, 211, 248, 0.75), 
+					 0 0 70px rgba(63, 211, 248, 0.75), 
+					 0 0 80px rgba(63, 211, 248, 0.75), 
+					 0 0 100px rgba(63, 211, 248, 0.75), 
+                     0 0 150px rgba(63, 211, 248, 0.75);
+    font-size: 45px;
+}
+
+.name span{
+    display: block;
+    font:  30px/40px 'AlexBrush';
+    font-weight: bold;
+    line-height: 60px;
+}
+
+
+/*CONTENT STYLE*/
+.container {
+    width: 960px;
+    height: 1350px;
+    margin: 20px auto;
+    background-image:linear-gradient(to bottom, white 20%, lightgray 80% );
+    opacity: 70%;
+    box-shadow: 5px 5px 20px rgba(199, 92, 190, 0.75);
+    border-top:13px solid lightblue;
+    border-bottom:13px solid lightsalmon;
+}
+
+.leftside {
+    width: 400px;
+    height: auto;
+    float: left;
+    position: relative;
+}
+
+.companyname{
+    width: 250px;
+    height: auto;
+    margin-top:150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.companyname a{
+    margin: 5px auto;
+    font: 24px 'QuickSand';
+    text-decoration: none;
+    color: black;
+}
+
+.companyname span{
+    display: inline-block;
+    text-align: center;
+    font: 18px 'BebasNeue';
+}
+
+.html {
+    width: 250px;
+    height: auto;
+    margin-top:230px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;     
+}
+
+.html span, .css span, .js span, .networking span{
+    text-align: center;
+    font: 20px 'QuickSand';
+}
+
+.css, .js, .networking {
+    width: 250px;
+    height: auto;
+    margin-top:25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;     
+}
+
+.midside{
+    width: 20px;
+    height: 900px;
+    float: left;
+    position: relative;
+    /* background-color: yellow; */
+}
+
+
+.midside .line1{
+    width: 3px;
+    height: 153px;
+    background-color:lightsalmon;  
+    position: absolute; 
+    left: 10px;
+}
+
+.midside .lingkaran1{
+    width: 14px;
+    height: 14px;
+    background-color: lightblue;
+    position: absolute;
+    top: 155px;
+    left: 4px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.midside .line2 {
+    width: 3px;
+    height: 180px;
+    background-color:lightsalmon;  
+    position: absolute; 
+    top: 173px;
+    left: 10px;
+}
+
+.midside .lingkaran2{
+    width: 14px;
+    height: 14px;
+    background-color: lightblue;
+    position: absolute;
+    top: 355px;
+    left: 4px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.midside .line3 {
+    width: 3px;
+    height: 179px;
+    background-color:lightsalmon;  
+    position: absolute; 
+    top: 373px;
+    left: 10px;
+}
+
+.midside .lingkaran3{
+    width: 14px;
+    height: 14px;
+    background-color: lightblue;
+    position: absolute;
+    top: 554px;
+    left: 4px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.midside .line4 {
+    width: 3px;
+    height: 250px;
+    background-color:lightsalmon;  
+    position: absolute; 
+    top: 572px;
+    left: 10px;
+    opacity: 50%;
+}
+.midside .line5 {
+    width: 3px;
+    height: 550px;
+    background-color:lightsalmon;  
+    position: absolute; 
+    top: 800px;
+    left: 10px;
+ 
+}
+
+.rightside {
+    width: 540px;
+    height: 900px;
+    float: left;
+    position: relative;
+}
+
+.judul{
+    width: auto;
+    height: 40px;
+    text-align: center;
+    position: absolute;
+    left: 20px;
+    top: 40px;
+}
+
+.judul h1{
+    font: 35px 'BebasNeue';
+    text-transform: uppercase;
+}
+
+.work {
+    width: 500px;
+    height: 70px;
+    text-align: justify;
+    margin: 150px 0 0 20px;
+}
+
+.work2nd {
+    width: 500px;
+    height: 70px;
+    text-align: justify;
+    margin: 130px 0 0 20px; 
+}
+
+.work3rd {
+    width: 500px;
+    height: 70px;
+    text-align: justify;
+    margin: 129px 0 0 20px; 
+}
+
+.work h3, .work2nd h3, .work3rd h3 {
+    font: 20px 'QuickSand';
+    margin-bottom: 5px;
+}
+
+.work p, .work2nd p, .work3rd p {
+    font: 20px 'Arial Narrow', arial, sans-serif;
+    line-height: 30px;
+}
+
+.skills{
+    width: auto;
+    height: 40px;
+    position: absolute;
+    left: 20px;
+    top: 120px;
+    position: relative;
+}
+
+
+.skills h1{
+    font: 35px 'BebasNeue';
+    text-transform: uppercase;
+}
+
+.sKotak1 {
+    width: 490px;
+    height: 25px;
+    background-color: white;
+    position: absolute;
+    top: 85px;
+    display: inline-block;
+}
+
+.sKotak2 {
+    width: 490px;
+    height: 25px;
+    background-color: white;
+    position: absolute;
+    top: 130px;
+    display: inline-block;
+}
+
+.sKotak3 {
+    width: 490px;
+    height: 25px;
+    background-color: white;
+    position: absolute;
+    top: 181px;
+    display: inline-block;
+}
+
+.sKotak4 {
+    width: 490px;
+    height: 25px;
+    background-color: white;
+    position: absolute;
+    top: 225px;
+    display: inline-block;
+}
+
+
+
+.sKotak1 .sHtml  {
+    margin: 5px 8px;
+    width: 0px;
+    height: 15px;
+    background-color: lightblue;
+    transform: skew(-30deg);
+    animation: sHtml 3s 1s ease-in alternate forwards;
+
+}
+
+.sKotak2 .sCss {
+    margin: 5px 8px;
+    width: 0px;
+    height: 15px;
+    background-color: black;
+    transform: skew(-30deg);
+    animation: sHtml 3s 4s ease-in alternate forwards;
+}
+
+.sKotak3 .sJs {
+    margin: 5px 8px;
+    width: 0px;
+    height: 15px;
+    background-color: black;
+    transform: skew(-30deg);
+    animation: sJs 3s 7s ease-in alternate forwards;
+}
+
+.sKotak4 .sNet {
+    margin: 5px 8px;
+    width: 0px;
+    height: 15px;
+    background-color: black;
+    transform: skew(-30deg);
+    animation: sNet 3s 10s ease-in alternate forwards;
+}
+
+.portofolio {
+    width: auto;
+    height: 40px;
+    position: absolute;
+    left: 20px;
+    top: 400px;
+    position: relative;
+}
+
+.portofolio h1 {
+    font: 35px 'BebasNeue';
+    text-transform: uppercase;
+}
+
+#portofolio {
+    font: 19px 'QuickSand';
+    text-align: center;
+    position: absolute;
+    top: 1150px;
+}
+
+#pRzq1 {
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+}
+
+#pRzq3 {
+    width: 200px;
+    height: 200px;
+}
+
+/*ANIMATION STYLE*/
+.gambar {
+    position: relative;
+}
+
+#astro {
+    width: 250px;
+    height: 250px;
+    position: fixed;
+    top: 200px;
+    left: 30px;
+    animation: astro 2s ease infinite alternate;
+}
+
+#earth {
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    top: 50px;
+    left: 1600px;
+    animation: earth 80s ease-in infinite alternate;
+}
+
+
+@keyframes sHtml {
+    10%{
+        width: 0px;
+    }
+    50% {
+        width: 250px;
+        background-color:rgb(165, 126, 110);
+    }
+    100%{
+        width: 450px;
+        background-color:lightsalmon;
+    }
+}
+
+
+@keyframes sJs {
+    10%{
+        width: 0px;
+    }
+    50% {
+        width: 250px;
+        background-color:rgb(165, 126, 110);
+    }
+    100%{
+        width: 400px;
+        background-color:lightsalmon;
+    }
+}
+
+@keyframes sNet {
+    10%{
+        width: 0px;
+    }
+    50% {
+        width: 250px;
+        background-color:rgb(165, 126, 110);
+    }
+    100%{
+        width: 370px;
+        background-color:lightsalmon;
+    }
+}
+
+@keyframes astro {
+    from{
+        margin-top: 100px;
+    }
+    to {
+        margin-top: 400px;
+    }
+}
+
+@keyframes earth {
+    to {
+        left: 1600px;
+    }
+    from{
+        transform: rotate(720deg);
+    }
+}
+
+
+@keyframes zoomDanFade {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDownFade {
+    0% {
+        opacity: 0;
+        margin: -20px;
+    }
+    100%{
+        opacity: 1;
+        margin: 0;
+    }
+}

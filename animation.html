@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animation</title>
+    <style>
+
+        body {
+            background-image: url(space.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* .kotak{
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            animation: animasiKotak 2s ease 3 alternate forwards; 
+        } */
+
+        .kotak:hover {
+            
+        }
+
+        @keyframes animasiKotak {
+            0% {
+                width: 200px;
+            }
+
+            50% {
+                width: 500px;
+                height: 200px;
+            }
+
+            100% {
+                width: 500px;
+                height: 500px;
+            }
+        }
+
+
+        .gambar {
+            position: relative;
+        }
+
+        #dangon {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 200px;
+            left: 300px;
+            animation: dangonronpa 2s ease infinite alternate; /*shorthand*/
+        }
+
+        #earth {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: 50px;
+            left: 800px;
+            animation: earth 100s ease infinite alternate;
+        
+        }
+
+    
+
+        @keyframes dangonronpa {
+            from{
+                margin-top: 100px;
+            }
+            to {
+                margin-top: 400px;
+            }
+        }
+
+        @keyframes earth {
+            to {
+                left: 800px;
+            }
+            from{
+                transform: rotate(720deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="kotak">
+
+    </div>
+
+    <div class="gambar">
+        <img id="dangon" src="astro.png" alt="">
+    </div>
+
+    <div class="gambar">
+        <img id="earth" src="earth.png" alt="">
+    </div>
+
+    
+</body>
+</html>
